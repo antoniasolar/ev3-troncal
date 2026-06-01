@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Acreditación y Arancel</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100..900;1,100..900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet"/>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <nav>
+            <div>
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="32" height="32" fill="#e33e1b">
+                        <path d="M93.05,89.79v1.48H7V89.79l32.1-35.42h20.3ZM30.81,20.3a11.73,11.73,0,0,1,23.13-2.59h.86A12.57,12.57,0,0,1,67.34,30.14a12.71,12.71,0,0,1-9.22,11.93,8.86,8.86,0,0,1-17.71,0,8.67,8.67,0,0,1,3.19-6.65A11.16,11.16,0,0,1,42.5,32,11.68,11.68,0,0,1,30.81,20.3Z"/>
+                    </svg>
+                    Not Allowed
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+        </nav>
+
+        <header>
+            <img src="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/cdn/images/crown.jpg"/>
+            <h3>DISEÑO EN CHILE</h3>
+            <h1>Acreditación, arancel y conveniencia</h1>
+            <h2>Más allá de la acreditación: lo que realmente determina el costo de estudiar Diseño en Chile</h2>
+             <address>Por <a href="https://github.com/antoniasolar">Antonia Solar</a>, <a href="#">Gastón Meneses</a> y <a href="https://github.com/profesorfaco">Felipe Cortez</a></address>
+            <time>Publicado el 2 de junio, 2026 06:00 p.m. GMT-4</time>
+        </header>
+
+        <main id="contenedor">
+
+            <p>En Chile, <a href="https://bcn.cl/2ewsw" target="_blank">la ley</a> obliga a acreditarse a las instituciones de educación superior. Carreras, entre las que se cuentan las de Diseño, quedan exentas de esta obligatoriedad.</p>
+
+            <p>Cada acreditación obligatoria e institucional evalúa el cumplimiento del proyecto corporativo y verifica la existencia de mecanismos eficaces de autorregulación y de aseguramiento de la calidad. A partir del resultado de cada evaluación, la <a href="https://www.cnachile.cl/Paginas/Acreditacion-institucional.aspx" target="_blank">Comisión Nacional de Acreditación (<small>CNA</small>)</a> determina el plazo para la próxima, con tres niveles de cumplimiento:</p>
+
+            <ul>
+                <li><em>Acreditada en nivel de excelencia:</em> de 6 a 7 años.</li>
+                <li><em>Acreditada en nivel avanzado:</em> de 4 a 5 años.</li>
+                <li><em>Acreditada en nivel básico:</em> 3 años.</li>
+            </ul>
+
+            <p>Por acotar, podemos <em>revisar las acreditaciones de las universidades</em>, que son las instituciones responsables de ofrecer el 35,82% de las vacantes totales de la educación superior para carreras de Diseño en 2026 (2.717 cupos del total de 7.586, según registros del <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior, <small>SIES</small></a>).</p>
+
+            <p>Revisando estas acreditaciones, podemos encontrar plazos de acreditación que oscilan entre los 3 y los 7 años.</p>
+
+            <h4>¿Existe una correlación directa entre el nivel de acreditación de una universidad y el costo de su arancel anual?</h4>
+
+            <p>En el siguiente gráfico podemos ver la respuesta.</p>
+
+            <figure>
+                <canvas id="dispersion"></canvas>
+                <figcaption>
+                    Años de acreditación institucional y arancel del programa. Datos 2026, obtenidos del
+                    <a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>, de la Subsecretaría de Educación Superior y de la <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">Comisión Nacional de Acreditación</a>.
+                </figcaption>
+            </figure>
+
+            <p>Para visualizar patrones en estructuras complejas, los <a href="https://datavizcatalogue.com/ES/metodos/diagrama_de_dispersion.html" target="_blank">diagramas de distribución</a> resultan idóneos. Al proyectar una colección de puntos mediante coordenadas cartesianas, el cruce de las variables en los ejes horizontal y vertical permite detectar la presencia y fuerza de una correlación entre ambas.</p>
+
+            <p>Al trazar una línea de mejor ajuste entre el programa de menor costo y acreditación básica (Diseño de Interiores y Ambientes en la <small>UNIACC</small>) hasta la opción de mayor costo y acreditación (Diseño en la <small>PUC</small>), se observa una pendiente ascendente en la distribución de los puntos. Si bien esto sugiere una correlación positiva, donde un mayor número de años de acreditación tiende a coincidir con aranceles más altos, la fuerza de correlación es débil y los valores atípicos son varios.</p>
+
+            <h4>¿Cuánto paga realmente un estudiante de Diseño según el tipo de universidad?</h4>
+
+            <p>El arancel no depende solo de la acreditación: el tipo de institución y el acceso a gratuidad son factores igual de determinantes. En el siguiente gráfico se compara el <em>arancel anual promedio</em> según si la universidad es estatal, privada <small>CRUCH</small> o privada, y si ofrece o no gratuidad.</p>
+
+            <figure>
+                <canvas id="tipoInstitucion"></canvas>
+                <figcaption>
+                    Arancel anual promedio por tipo de institución y acceso a gratuidad en carreras de Diseño. Datos 2026, obtenidos del
+                    <a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">Servicio de Información de Educación Superior (SIES)</a> y del <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" target="_blank">portal de beneficios estudiantiles</a> de la Subsecretaría de Educación Superior.
+                </figcaption>
+            </figure>
+
+            <p>Para comparar valores entre categorías distintas, los <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_barras_agrupadas.html" target="_blank">gráficos de barras agrupadas</a> son la herramienta más adecuada según el Catálogo de Visualización de Datos, ya que permiten ver diferencias entre grupos y dentro de cada grupo al mismo tiempo.</p>
+
+            <p>El gráfico revela una brecha clara: las universidades estatales tienen el arancel promedio más bajo, y la mayoría ofrece gratuidad. Las privadas sin gratuidad concentran los aranceles más altos. Para un estudiante que califica para gratuidad, estudiar Diseño en una universidad estatal puede significar <em>no pagar arancel</em>, mientras que en una privada sin ese beneficio el costo anual puede triplicarse. El tipo de institución, más que la acreditación, parece ser el factor que más incide en cuánto pagará un estudiante de Diseño en Chile.</p>
+
+            <h4>¿Qué universidades son las más convenientes para estudiar Diseño en Chile?</h4>
+
+            <p>Considerando en conjunto el arancel anual, el acceso a gratuidad y los años de acreditación institucional, es posible construir un <em>índice de conveniencia</em> que ayude a comparar opciones de forma integrada. Cada factor aporta un tercio del puntaje total: se premia el arancel más bajo, la disponibilidad de gratuidad y la mayor acreditación.</p>
+
+            <figure>
+                <canvas id="topUniversidades"></canvas>
+                <figcaption>
+                    Top 10 universidades con carreras de Diseño ordenadas por índice de conveniencia (0–100), calculado a partir del arancel anual, acceso a gratuidad y años de acreditación institucional. Datos 2026 del <a href="https://www.mifuturo.cl/servicio-de-informacion-de-educacion-superior/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>, la <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">Comisión Nacional de Acreditación</a> y el <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" target="_blank">portal de beneficios estudiantiles</a>.
+                </figcaption>
+            </figure>
+
+            <p>Los <a href="https://datavizcatalogue.com/ES/metodos/grafico_de_barras.html" target="_blank">gráficos de barras horizontales</a> permiten comparar rankings con facilidad, ya que el largo de cada barra refleja directamente el puntaje obtenido y el orden vertical hace inmediata la lectura de posiciones.</p>
+
+            <p>La <em>Universidad de La Serena</em> lidera el ranking con el arancel más bajo del grupo ($4.071.000), gratuidad disponible y cinco años de acreditación. Le siguen de cerca la Universidad de Playa Ancha y la del Bío-Bío, con perfiles similares. Destaca la presencia de la <em>USACH</em> y la <em>U. de Chile</em> en el top 5 pese a tener aranceles más altos, gracias a su acreditación de excelencia (7 años) y gratuidad disponible. Todas las universidades del top 10 ofrecen gratuidad, lo que confirma que este beneficio es el factor más determinante a la hora de evaluar conveniencia.</p>
+
+            <h5>Fuentes</h5>
+<p>
+    <a href="https://www.mifuturo.cl/bases-de-datos-de-oferta-academica/" target="_blank">Servicio de Información de Educación Superior (SIES)</a>;
+    <a href="https://www.cnachile.cl/Paginas/Inicio.aspx" target="_blank">Comisión Nacional de Acreditación (CNA)</a>;
+    <a href="https://portal.beneficiosestudiantiles.cl/gratuidad" target="_blank">Subsecretaría de Educación Superior — Beneficios Estudiantiles</a>
+</p>
+
+        </main>
+
+        <footer>
+            <div>
+                <a href="https://www.reuters.com/graphics/IRAN-CRISIS/OIL-CONSUMERS/akpeyynmypr/" target="_blank">Inspirado en Reuters</a>
+                <a href="https://github.com/profesorfaco/troncal">Diseño y visualización de información</a>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
