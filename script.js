@@ -148,7 +148,7 @@ const top10 = [
     { uni: "U. del Bío-Bío",        arancel: 4307000, gratuidad: true, acred: 5, tipo: "Estatal CRUCH",  puntaje: 84.2 },
     { uni: "USACH",                 arancel: 4989000, gratuidad: true, acred: 7, tipo: "Estatal CRUCH",  puntaje: 79.5 },
     { uni: "UTEM",                  arancel: 4763300, gratuidad: true, acred: 4, tipo: "Estatal CRUCH",  puntaje: 76.5 },
-    { uni: "U. de Chile",           arancel: 6486700, gratuidad: true, acred: 7, tipo: "Estatal CRUCH",  puntaje: 75.8 },
+    { uni: "U. de Chile",           arancel: 5492400, gratuidad: true, acred: 7, tipo: "Estatal CRUCH",  puntaje: 75.8 },
     { uni: "U. de Antofagasta",     arancel: 5120000, gratuidad: true, acred: 5, tipo: "Estatal CRUCH",  puntaje: 75.2 },
     { uni: "U. Católica de Temuco", arancel: 5276000, gratuidad: true, acred: 5, tipo: "Privada CRUCH",  puntaje: 73.8 },
     { uni: "U. de Valparaíso",      arancel: 5713000, gratuidad: true, acred: 6, tipo: "Estatal CRUCH",  puntaje: 70.9 },
